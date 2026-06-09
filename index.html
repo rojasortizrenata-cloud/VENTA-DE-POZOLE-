@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venta de Pozole</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fff8e7;
+    color:#4e342e;
+}
+
+/* ENCABEZADO */
+header{
+    background:linear-gradient(90deg,#c62828,#e53935);
+    color:white;
+    padding:30px;
+    overflow:hidden;
+}
+
+.titulo{
+    font-size:45px;
+    font-weight:bold;
+    white-space:nowrap;
+    position:relative;
+    animation:mover 8s linear infinite alternate;
+}
+
+@keyframes mover{
+    from{
+        left:0;
+    }
+    to{
+        left:60%;
+    }
+}
+
+header p{
+    text-align:center;
+    margin-top:15px;
+    font-size:20px;
+}
+
+/* MENÚ */
+nav{
+    background:#2e7d32;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#ffeb3b;
+}
+
+/* SECCIONES */
+section{
+    padding:40px;
+}
+
+h2{
+    color:#c62828;
+    margin-bottom:20px;
+}
+
+/* GALERÍA */
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 5px 10px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.galeria img:hover{
+    transform:scale(1.05);
+}
+
+/* CONTACTO */
+.contacto{
+    background:#ffe0b2;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 8px rgba(0,0,0,.2);
+}
+
+/* MAPA */
+iframe{
+    width:100%;
+    height:350px;
+    border:none;
+    border-radius:12px;
+}
+
+/* PIE */
+footer{
+    background:#c62828;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="titulo">🍲 VENTA DE POZOLE 🍲</div>
+    <p>El auténtico sabor tradicional que encanta a toda la familia</p>
+</header>
+
+<nav>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#ubicacion">Ubicación</a>
+</nav>
+
+<section id="galeria">
+    <h2>📸 Nuestro Pozole</h2>
+
+    <div class="galeria">
+        <img src="IMG/maiz.jpeg" alt="MAIZ">
+        <img src="IMG/pollito.jpeg" alt="DEMENUSANDO EL POLLO">
+        <img src="IMG/plato.jpeg" alt="POZOLE">
+        <img src="IMG/pollo.jpeg" alt="PLATO DE POZOLE ROJO CON POLLO">
+    </div>
+</section>
+
+<section id="contacto">
+    <div class="contacto">
+        <h2>📞 Pedidos y Reservaciones</h2>
+        <p><strong>Teléfono:</strong> +52 951 394 9964</p>
+
+        <br>
+
+        <h2>📍 Dirección</h2> YUCUBEY DE CUITLAHUACA
+        <p><a href="https://maps.google.com/?q=17.03556,-97.73694" target="_blank">
+Ver ubicación en Google Maps
+</a></p>
+
+
+<footer>
+    <p>© 2026 Venta de Pozole |CULTURA DIGITAL| SERGIO BRAYAN VASQUEZ VELASCO.</p>
+</footer>
+
+</body>
+</html>
